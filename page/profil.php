@@ -28,6 +28,7 @@ if (!isset($_COOKIE['mail'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Assets/css/style-connexion.css">
+    <link rel="stylesheet" href="../Assets/css/header.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>La Bonne Plateforme_</title>
@@ -35,7 +36,21 @@ if (!isset($_COOKIE['mail'])) {
 
 <body>
     <header>
-
+        <div>
+            <img src="../Assets/img/logo.svg" alt="" class="logo">
+            <a class="deposer"><img src="../Assets/img/article.svg" alt=""> Déposer une annonce</a>
+            <form action="" method="post">
+                <label for="">
+                    <button><img src="../Assets/img/loupe.svg" alt=""></button>
+                    <input type="search" name="" id="" placeholder="rechercher">
+                </label>
+            </form>
+        </div>
+        <div>
+            <img src="../Assets/img/heart.svg" alt="">
+            <img src="../Assets/img/communications.svg" alt="">
+            <img src="../Assets/img/account.svg" alt="">
+        </div>
     </header>
     <main>
         <section class="centrer">
@@ -43,10 +58,10 @@ if (!isset($_COOKIE['mail'])) {
         </section>
         <section class="centrer1">
             <div class="cadre-information">
-                <p class="coordonnees">mail : <?php echo $_COOKIE['mail']?></p><br>
-                <p class="coordonnees">nom : <?php echo $_COOKIE['nom']?></p><br>
-                <p class="coordonnees">rénom : <?php echo $_COOKIE['prenom']?></p><br>
-                <p class="coordonnees">adresse : <?php echo $_COOKIE['adresse']?></p>
+                <p class="coordonnees">Mail : <?php echo $_COOKIE['mail']?></p><br>
+                <p class="coordonnees">Nom : <?php echo $_COOKIE['nom']?></p><br>
+                <p class="coordonnees">Prénom : <?php echo $_COOKIE['prenom']?></p><br>
+                <p class="coordonnees">Adresse : <?php echo $_COOKIE['adresse']?></p>
             </div>
         </section>
         <section class="centrer2">

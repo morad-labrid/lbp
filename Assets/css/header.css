@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 10px;
 }
 
 header div:first-child {
