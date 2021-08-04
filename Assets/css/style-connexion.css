@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* /////////////////////////////////////////////////////////////// PAGE CONNEXION - INSCRIPTION */
+
+main {
+    background-color: #275FA0;
+}
+
+.centrer {
+    display: flex;
+    justify-content: center;
+}
+
+.centrer1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.centrer2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 228px;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 175px;
+    padding-bottom: 234px;
+}
+
+.space-around1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 34px;
+}
+
+.logo-jaune {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulaire {
+    text-align: center;
+}
+
+.titre {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.ipt {
+    background-color: #275FA0;
+    color: white;
+    margin-top: 24px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sbmt {
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFCA4B;
+    width: 75px;
+    height: 25px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.membre {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 48px;
+}
+
+.coordonnees {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cadre-information {}
