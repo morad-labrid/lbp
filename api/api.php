@@ -1,6 +1,8 @@
 <?php
 require '../class/user.php';
+require '../class/annonce.php';
 $user = new BonnePlateforme();
+$annonce = new BonnePlateformeA();
 
 if(isset($_POST['connexion'])){
     $mail = $_POST['user'];
