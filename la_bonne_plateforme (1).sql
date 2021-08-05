@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mer. 04 août 2021 à 10:24
+-- Généré le : jeu. 05 août 2021 à 13:15
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -34,11 +34,46 @@ CREATE TABLE IF NOT EXISTS `annonces` (
   `prix` int(11) NOT NULL,
   `id_categorie` int(11) NOT NULL,
   `date` datetime NOT NULL,
-  `image` varchar(255) NOT NULL,
   `id_user` int(11) NOT NULL,
   `description` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `categories`
+--
+
+DROP TABLE IF EXISTS `categories`;
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `categorie` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `categories`
+--
+
+INSERT INTO `categories` (`id`, `categorie`) VALUES
+(1, 'produits ménagers'),
+(2, 'véhicules'),
+(3, 'immobiliers');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `images`
+--
+
+DROP TABLE IF EXISTS `images`;
+CREATE TABLE IF NOT EXISTS `images` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom_image` varchar(255) NOT NULL,
+  `id_produit` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
